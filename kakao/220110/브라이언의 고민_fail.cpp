@@ -8,6 +8,7 @@ using namespace std;
 
 unordered_map<char, int> sch_map;   //  특수 문자 map
 vector<char> sch;   //  특수 문자
+vector<int> space;  //  공백 삽입할 위치
 
 // 전역 변수를 정의할 경우 함수 내에 초기화 코드를 꼭 작성해주세요.
 string solution(string sentence) {
