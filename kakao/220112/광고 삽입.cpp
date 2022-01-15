@@ -9,6 +9,7 @@ using namespace std;
 
 int start_time = 0, end_time;
 int adv_len;
+int ans_start, ans_end;
 
 // vector<pair<int, int> > log;
 vector<int> viewers;
@@ -26,6 +27,16 @@ string solution(string play_time, string adv_time, vector<string> logs) {
         // log.push_back(make_pair(s, e));
         for(int j = s; j <= e; j++)
             viewers[j] += 1;
+    }
+
+    for(int i = 0; i < viewers.size(); i++) {
+        int tmp_start, tmp_end;
+
+        if(viewers[i] > 0) {
+            tmp_start = i;
+        }
+
+
     }
 
     // for(int i = 0; i < log.size(); i++) {
