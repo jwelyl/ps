@@ -57,7 +57,6 @@ string solution(string play_time, string adv_time, vector<string> logs) {
     viewers.assign(play_end + 1, 0);
 
     for(int i = 0; i < logs.size(); i++) {
-        int view_num = i + 1;
         int view_start = string_to_second(logs[i].substr(0, 8));    //  시청 시작 시간
         int view_end = string_to_second(logs[i].substr(9, 8));      //  시청 완료 시간
 
@@ -72,7 +71,7 @@ string solution(string play_time, string adv_time, vector<string> logs) {
         start = 0;
     }
 
-    for(int i = 1; i <= play_end - adv_length; i++) {
+    for(int i = 1; i <= play_end - adv_length + 1; i++) {
         tmp -= viewers[i - 1];
         tmp += viewers[i + adv_length - 1];
 

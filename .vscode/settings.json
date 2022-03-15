@@ -6,6 +6,10 @@
         "string": "cpp",
         "utility": "cpp",
         "algorithm": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "queue": "cpp",
+        "iterator": "cpp",
+        "ios": "cpp",
+        "tuple": "cpp"
     }
 }
