@@ -10,6 +10,7 @@
         "queue": "cpp",
         "iterator": "cpp",
         "ios": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "stack": "cpp"
     }
 }
