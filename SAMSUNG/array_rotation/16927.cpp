@@ -18,16 +18,16 @@ void rotate(int cnt) {  //  cnt번째 사각형을 R번 회전시킴
     for(int r = 0; r < rot; r++) {
         int tmp = arr[cnt][cnt];    //  왼쪽 위 모서리 임시 저장
 
-        //  위쪽 벽(왼쪽 <- 오른쪽)
+        //  위쪽 변(왼쪽 <- 오른쪽)
         for(int i = cnt; i < m; i++)
             arr[cnt][i] = arr[cnt][i + 1];
-        //  오른쪽 벽(위쪽 <- 아래쪽)
+        //  오른쪽 변(위쪽 <- 아래쪽)
         for(int i = cnt; i < n; i++)
             arr[i][m] = arr[i + 1][m];
-        //  아래쪽 벽(왼쪽 -> 오른쪽)
+        //  아래쪽 변(왼쪽 -> 오른쪽)
         for(int i = m; i > cnt; i--)
             arr[n][i] = arr[n][i - 1];
-        //  왼쪽 벽(위쪽 -> 아래쪽)
+        //  왼쪽 변(위쪽 -> 아래쪽)
         for(int i = n; i > cnt; i--)
             arr[i][cnt] = arr[i - 1][cnt];
         //  기존 왼쪽 위 모서리 알맞은 위치에 배치
